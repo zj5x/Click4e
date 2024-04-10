@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clicker Game</title>
+  <style>
+    /* Center-align all elements */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black; /* Set background color to black */
+      color: white; /* Set text color to white for better visibility */
+    }
+
+    /* Style for the button */
+    button {
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    // Define the incrementCounter function
+    function incrementCounter() {
+      // Get the current value of the counter
+      var counterElement = document.getElementById("counter");
+      var currentCount = parseInt(counterElement.innerText.split(":")[1].trim());
+
+      // Increment the counter by 1
+      var newCount = currentCount + 1;
+
+      // Update the counter display
+      counterElement.innerText = "Counter: " + newCount;
+    }
+  </script>
+</head>
+<body>
+  <h1>Click4e</h1>
+  <div id="counter">Counter: 0</div> <!-- Counter above the button -->
+  <button onclick="incrementCounter()">CLICK HERE</button>
+  <p>Click the button above to increase the counter.</p> <!-- Moved the paragraph below the button -->
+  <div>Programming by: GlowingLabel705</div>
+  <div>Programming help by: ChatGPT</div> <!-- Updated programming help -->
+  <div>©2024 GL705 Interactive. All rights reserved</div>
+</body>
+</html>
