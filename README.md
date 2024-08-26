@@ -1,1 +1,2 @@
-This is a clicker game available both online and locally.
+This is a simple clicker game.
+It's available online, and locally
